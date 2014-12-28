@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="loader">
+	<div class="loader-text">Loading.......</div>
+</div>
+<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+<button>Get External Content</button>
+<div class="rtnMsg"></div>
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    // $("#div1").load("demo_test.txt");
+
+    // doAnAjax('https://www.google.co.in', null, function(myRtnV) {
+
+    // 	// alert('On callback : myRtnV - '+myRtnV);
+    //     // if (myRtnV == "success") {
+    //     //     // resetForm($('#myForm'));
+    //     //     // resetForm($('form[name=addChlGrp]'));
+    //     //     alert('success.......');
+    //     // } else {
+    //     //     $('.rtnMsg').html("Opps! Ajax Error");
+    //     // }
+    // });
+
+    doAnAjax1('https://www.google.co.in', null);
+
+  });
+});
+
+
+// pass callback as third parameter to doAnAjax()
+
+function doAnAjax(newUrl, data, callBack) {
+	$('.loader').style('display','block');
+    $.ajax({
+        url: newUrl,
+        async: true,
+        dataType: 'html',
+        beforeSend: function() {
+            $('.rtnMsg').html("beforeSend : loading..........");
+        },
+        type: "GET",
+        data: data,
+        cache: false,
+        success: function(data, textStatus, xhr) {
+            $('.rtnMsg').html('success : '+data);
+            myRtnA = "Success"
+            return callBack( myRtnA );  // return callBack() with myRtna
+        },
+        error: function(xhr, textStatus, errorThrown) {
+            $('.rtnMsg').html("opps: " + textStatus + " : " + errorThrown);
+            myRtnA = "Error"
+            return callBack ( myRtnA ); // return callBack() with myRtna
+        }
+    });
+}
+
+
+// ajax without callbacks
+function doAnAjax1(newUrl, data) {
+	$('.loader').css('display','block');
+    $.ajax({
+        url: newUrl,
+        async: true,
+        dataType: 'html',
+        beforeSend: function() {
+            $('.loader').html("beforeSend : loading..........");
+        },
+        type: "GET",
+        data: data,
+        cache: false,
+        success: function(data, textStatus, xhr) {
+            // $('.loader').html('success : '+data);
+            // debugger;
+            $('.loader').html('success : textStatus - '+textStatus+' , status code : '+xhr.status);
+            $('.loader').css('display','block');
+        },
+        error: function(xhr, textStatus, errorThrown) {
+            $('.loader').html("opps: " + textStatus + " : " + errorThrown);
+            $('.loader').css('display','none');
+        }
+    });
+}
+
+</script>
+
+<style type="text/css">
+	html,body{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.loader{		
+		position: absolute;
+		background: yellow;
+		width: 100%;
+		display: block;
+		height: 100%;
+		text-align: center;
+	}
+.loader-text{
+	text-align: center;
+	margin-top: 3em;
+}
+
+</style>
+
+</body>
+</html>
