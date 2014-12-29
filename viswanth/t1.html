@@ -2,19 +2,20 @@
 <html>
   <body>
     <p> Table#1</p>
-    <table border="1" style="width:50%">
+    <table border="1" width="60%" cellspacing="0" cellpadding="20">
       <tr>
-        <th colspan="2"><b><center>A</center></b></th>		
+        <td colspan="2">a1</td>
+        <td>a2</td>
       </tr>
       <tr>
-        <td colspan="2"><b><center>B</center></b></td>
+        <td rowspan="2">a1</td>
+        <td>a2</td>
+        <td>a3</td>
       </tr>
       <tr>
-        <td rowspan="2"><b><center>C</center></b></td>
-        <td><b><center>D</center></b></td>
-      </tr>
-      <tr>
-        <td colspan="2"><b><center>E</center></b></td>
+        <td>a1</td>
+        <td>a2</td>
+        <!-- <td>a3</td> -->
       </tr>
     </table>
   </body>
