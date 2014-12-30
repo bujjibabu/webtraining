@@ -1,0 +1,53 @@
+.bb-body{
+				background:#c0c0c0;
+			}
+			.bb-loginbtn{
+				background: rgb(97, 208, 234);
+				color: #fff;
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-top: 4px;
+				padding-bottom: 4px;
+				border: none;
+				border-radius: 9px;
+			}
+			.bb-username-label{
+				color:blue;
+			}
+			.bb-form1{
+				width: 50%;
+				float: right;
+				background: rgb(148, 139, 139);
+				padding: 52px 0px;
+				text-align: center;
+			}
+			.bb-form0 {
+				width: 50%;
+				float: left;
+				background: rgb(75, 75, 82);
+				text-align: center;
+			}
+			.bb-first-login-btn{
+				margin-left: 18%;
+			}
+			.bb-form3{
+				background-image: url('../images/bgimage.jpg');
+				width:50%;
+			}
+			.bb-signup-label{
+				color:blue;
+				width:50%;
+				float: left;
+				text-align: right;
+			}
+			.bb-signup-input{
+				width: 50%
+				float:right;
+				margin-top: 38px;
+			}
+			.bb-signup-input input{
+				margin-left:20px;
+			}
+			.bb-signin-label{
+				color:green !important;
+			}
