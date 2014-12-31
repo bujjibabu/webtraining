@@ -1,0 +1,36 @@
+.v-body{
+	 background: #c0c0c0;
+
+     }
+
+     .v-button{
+     background: rgb(97, 208, 234);
+     color: #fff;
+	 padding-left: 20px;
+	 padding-right: 20px;
+	 padding-top: 4px;
+	 padding-bottom: 4px;
+	 border: none;
+	 border-radius: 9px;
+	 
+	}
+
+	.v-simpleform{
+
+     width: 25%;
+	 float: center;
+	 background: rgb(148, 139, 139);
+	 padding: 52px 0px;
+     text-align: center;
+     
+	}
+
+
+	
+
+
+
+
+
+
+     
