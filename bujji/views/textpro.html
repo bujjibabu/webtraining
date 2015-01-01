@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text</title>
+	<style type="text/css">
+	.bb-heading,
+	.bb-paragraph,
+	.bb-span{
+		color:blue;
+	}
+	.bb-paragraph>span{
+		color:red;
+	}
+	.bb-paragraph{
+		text-align: justify;
+		border-top: 2px solid red;
+		border-bottom: 2px dotted blue;
+		border-left: 10px solid green;
+		border-right: 2px dotted red;
+		text-indent: 50px;
+	}
+	.bb-heading{
+		color:red;
+		text-shadow:2px 2px blue;
+		word-spacing: 30px;
+	}
+	.inside-paragraph{
+		text-decoration: none;
+	}
+	.bb-anchor{
+		text-decoration: none;
+	}
+	a:link{
+		color:yellow !important;
+	}
+	.bb-anchor:visited{
+		color:#c0c0c0;
+	}
+	.bb-anchor:hover{
+		color:red;
+		border-top:2px solid blue;
+	}
+	</style>
+</head>
+<body>
+	<h2 class="bb-heading">para graph heading</h2>
+	<p class="bb-paragraph">  
+		some paragraph text some paragraph text some paragraph text some paragraph text some paragraph text some paragraph text some paragraph text some paragraph text some paragraph text some paragraph text some paragraph text some paragraph text some paragraph text some paragraph text some paragraph text some paragraph text some paragraph text some paragraph text some paragraph text some paragraph text some paragraph text
+		<span class="inside-paragraph"> sub paragraph </span>
+	</p>
+	<span class="bb-span"> span text span text span text span text span text span text span text span text span text span text span text span text  </span>
+	<br/>
+	<br/>
+	<br/>
+
+	<a href="https://www.google.co.in" class="bb-anchor" target="blank">google</a>
+</body>
+</html>
