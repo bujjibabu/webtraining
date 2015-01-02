@@ -1,0 +1,59 @@
+.web-body{
+           background-image:url('http://blog.joslin.org/wp-content/uploads/2013/10/fruits1.jpg');
+
+}
+h1{
+     text-align: center;
+     font-size: 35px;
+     font-family: Arial;
+     color: red;
+     text-shadow:2px 2px white;
+ }
+
+     
+.web-mar{
+	  font-size: 28px;
+	  color: green;
+	  text-shadow:2px 2px red;
+
+}
+.web-table{
+	  border: 2px;
+	  border-style: double;
+	  border-color: white;
+	  border-radius: 2px;
+	  
+	  width: 100%;
+	  background-image: url('http://www.agricorner.com/wp-content/uploads/2014/01/vegetables-basket.jpg');
+	}
+ h2{
+ 	  text-align: center;
+ 	  color:#800080;
+ 	  text-shadow:2px 2px white;
+ 	  font-size: 30px;
+ 	  border:10px;
+ 	  border-style: double;
+ 	  background-color: green;
+ }
+ h3{
+ 	  text-align: center;
+ 	  color: #0000ff;
+ 	  font-size: 25px;
+ 	  border:12px;
+ 	  border-style:double;
+ 	  background-color: orange;
+
+ } 
+ h4{
+ 	color: #0000ff;
+ 	font-size: 25px;
+}  
+p{
+	color: #00ff00;
+	font-size: 26px;
+} 
+li{
+    color:#800000 ;
+    font-size: 22px;
+
+}
