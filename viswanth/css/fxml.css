@@ -1,0 +1,22 @@
+.llb{
+	text-align: right;
+	width: 150px;
+	float: left;
+}
+.tbox{
+	width: 200px;
+	float: left;
+	padding: 6px 0px;
+	border-radius: 5px; 
+}
+.wlcm-form{
+	background-image: url('../css/bckimg.jpg');
+}
+.loginbtn{
+	margin-left: 283px;
+	background: rgb(69, 130, 144);
+	color: white;
+	padding: 2px 14px;
+	border: none;
+	border-radius: 9px;
+}
