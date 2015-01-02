@@ -1,0 +1,41 @@
+.stext{
+	text-align: right;
+	width: 150px;
+	float: left;
+}
+.s-box{
+	width: 200px;
+	float: left;
+	margin-left: 16px;
+	padding: 6px 12px;
+	border: none;
+	border-radius: 6px;
+	background: rgb(56, 141, 166);
+}
+.sendbtn{
+	margin-left: 280px;
+	background: rgb(81, 112, 131);
+	color: white;
+	padding: 12px 30px;
+	border: none;
+	border-radius: 10px;
+}
+textarea{
+	width: 222px;
+	height: 109px;
+	border: none;
+	border-radius: 6px;
+	margin-left: 16px;
+	background: rgb(56, 141, 166);
+}
+form{
+	background-image: url('../css/bkimg.jpg');
+	
+}
+div{
+	width: 50%;
+}
+h1{
+	margin-left: 140px; 
+	color: rgb(56, 141, 166);
+}

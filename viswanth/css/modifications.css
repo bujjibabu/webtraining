@@ -1,0 +1,19 @@
+.body-color{
+	background:rgb(176, 199, 255);
+}
+.ltext{
+	text-align: right;
+	width: 150px;
+	float: left;
+}
+.box{
+	width: 200px;
+	float: left;
+	padding: 6px 0px;
+}
+.signup{
+	color:white;
+	background: green;
+	padding: 7px 32px 7px 32px;
+	margin-left: 153px;
+}
