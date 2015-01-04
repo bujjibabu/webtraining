@@ -1,0 +1,43 @@
+.web2-body{
+	        background-color: 1796DA;
+
+}
+.web2-div{
+	       color: blue;
+	       font-style: arial;
+	       text-align: justify;
+
+} 
+h1{
+	text-align: center;
+	color: 211D6B;
+	border:10%;
+	width: 100%;
+	background-color: yellow;
+
+
+}  
+h2{
+	color: 506B1D;
+	text-transform: uppercase;
+	border: 4px;
+	width: 20%;
+	background-color: 1A17DA;
+	text-align: center;
+}  
+h3{
+	color: A9330F;
+	text-transform: capitalize;
+}
+p{
+    color: 090707; 
+    text-indent: 20px;
+}
+.web2-form{
+	     border: 6px;
+	     border-style: double;
+	     padding: 4px;
+}
+.web2-bq{
+	      text-align:top;
+}
