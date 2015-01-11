@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	 <head>
+	 	<title>
+	 		jsone
+	 	</title>
+	 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	 </head>
+	 <body>
+
+	 	 <div>
+	 	    <form class="text-center">
+	 	    </br>
+	 	       <input type="text" placeholder="username" id="username"/>
+	 	   	   <input type="password" placeholder="passsword" id="password"/>
+	 	   	   <input type="button" value="Log in" onclick="fnLogin();" />
+	 	   	   <div>
+	 	   	   <div class="btn btn-primary text-center" onclick ='FnGetCurrentTime()'>get current time</span>
+	 	   	   </div>
+	 	   	   </div>
+             </form>
+	 	   </div>
+
+	 	   </br>
+	 	   <div id = "samplediv">Sample div text</div>
+	 	   <div onclick="fnTextSend();">get text</div>
+	 	   <script type="text/javascript">  
+                 function fnLogin(){
+                 	var username  = document.getElementById('username').value;
+                 	var password = document.getElementById('username').value;
+                 	alert(username);
+                 	alert(password);
+               	   // alert('login clicked');
+               };
+                 function FnGetCurrentTime(){ debugger;
+                 	var currentTime = new Date();
+                 	//alert('this is my local time' + currentTime);
+                 	console.log (currentTime)
+                 };
+
+                  function fnTextSend(){
+                  	document.getElementById('samplediv').innerHTML = 'replaced another div tex gggggght';
+                  	var x =  document.getElementById('samplediv').value;
+                  	console.log(x);
+                  	alert (x);
+                  }
+	 	   </script>
+	 </body>
+</html>
