@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> javscript example2</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+</head>
+<body>
+	<p id="paragraph">Our specialization in both in mobile technology management and mobile application dates back from our inception.</p>
+
+	<div id="showhidediv">show are hide</div> 
+
+	<input type="button" value="stylechange" onclick="fnChngeStyle();">
+	<input type="button" value="showdiv" onclick="showdiv();">
+	<input type="button" value="hidediv" onclick="hidediv();">
+	<input type="button" value="toggle" onclick="toggle('showwwww');">
+	
+
+
+	<script type="text/javascript">
+		function fnChngeStyle(){
+			document.getElementById('paragraph').style.color ='red';
+			document.getElementById('paragraph').style.margin ='30px';
+			document.getElementById('paragraph').style.padding ='30px';
+			document.getElementById('paragraph').style.border ='1px solid red';
+		};
+		function hidediv(){
+
+			document.getElementById('showhidediv').style.display ='none';
+		};
+		function showdiv(){
+			document.getElementById('showhidediv').style.display ='block';
+		};
+		function toggle(receivedvar){
+			if(receivedvar == 'show'){
+				document.getElementById('showhidediv').style.display ='none';	
+			}else{
+				alert('wrongclick');
+			}
+		};
+	</script>
+</body>
+</html>
