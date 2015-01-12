@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> javscript example2</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+</head>
+<body>
+ <div onclick="fnFunction(4,5)">function</div>
+ <div onclick="fnFunction2()">function</div>
+ <div id="usernameid" class="col-sm-12 text-center text-success"></div>
+ <p id="fname" class="col-sm-12 text-center text-danger"></p>
+ <p id="arrayname" class="col-sm-12 text-center text-danger"></p>
+	
+	<script type="text/javascript">
+		var z;
+		function fnFunction(x,y){
+			 z = x*y;
+			alert(z);
+		}		
+		function fnFunction2(){
+			//alert(z);
+		var stringvalue = 'ui training in web tech';
+		var strlength = stringvalue.length;
+		var index = stringvalue.indexOf('u');
+		alert(index);
+		}
+
+var odj = {}; //empty object
+var obj1 = {			
+			'username' :'bujjibabu',
+			'firstname' :'balaga',
+			'lastname':'bujji'
+			};
+var obj2 = {			
+			'username' :'vidya',
+			'firstname' :'s',
+			'lastname':'a'
+			};
+
+var obj3 = {			
+			'username' :'viswa',
+			'firstname' :'ss',
+			'lastname':'ab'
+			};
+
+var obj4 = {			
+			'username' :'sample4',
+			'firstname' :'ss',
+			'lastname':'ab'
+			};
+//alert(obj1.username);
+var emptyarray = []; //empty array.
+var  array1 = ['bujji','vidya','viswa'];
+var arry2 = [obj1,obj2,obj3];
+//alert(arry2.length);
+arry2.push(obj4);
+//alert(arry2.length);
+
+var x = 5; //number
+var y = '5'; //string
+if(x==y){
+	//alert('both are equl');
+}else{
+	//alert('not equel');
+}
+
+if(x === y){
+	//alert('both are equl');
+}else{
+	//alert('not equel');
+}
+
+for(i=0; i<array1.length; i++){
+	alert(array1[i]);
+}
+//alert(arry2[0].username);
+//alert(array1.length);
+
+//alert(array1[0]);
+//alert(array1[1]);
+//alert(array1[2]);
+//alert(array1);
+
+
+			//alert(obj1.username);
+			document.getElementById('usernameid').innerHTML = obj1.username;
+			document.getElementById('fname').innerHTML = obj1.firstname;
+			document.getElementById('fname').innerHTML = obj1.firstname;
+			document.getElementById('arrayname').innerHTML = array1[1];
+
+
+		/*var stringvalue = 'uitraining';
+		var strlength = stringvalue.length;
+		alert(strlength);
+*/
+	</script>
+</body>
+</html>
