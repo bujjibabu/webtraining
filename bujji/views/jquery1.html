@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> javscript example2</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<style type="text/css">
+		.div123 {
+			height:100px;
+			width:100px;
+			background: red;
+			/*display: none;*/
+		}
+		.myownclass{
+			border:1px solid red;
+			color blue;
+			background:yellow;
+		}
+	</style>
+</head>
+<body>
+	<p class="text-center text-primary">jquery example</p>
+	<div class="divclass btn btn-primary">hide p tag</div>
+	<div class="showdiv btn btn-success">show p tag</div>
+	<p class="btn btn-default btnshow btn-danger">show button</p>
+	<p class="btn btn-default mouseenter btn-danger">when the mouse enter on the element hide this  </p>
+	<p class="mouseleave text-center"> mouse leave </p>
+	<span class="addcss text-center"> add some css </span>
+	<p id="multiplecss"> multilple prop of css</p>
+	<p id="fadein"> fade In </p>
+
+	<p class="btn btn-success addclass"> add class</p>
+	<div class="div123">ssssssssssssssssssssssssssssssssssssssssss</div>
+	<span class="widthcal"> hhddddddddddddddddddnjkkfklfl;a;k,da;nkxlclcc;'mnklxkpcxlc[psf[] </span>
+
+	<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.addcss').hover(function(){
+			$(this).css('color','red');
+			var widthss = $('.widthcal').width();
+
+			alert(widthss);
+		});
+
+		$('.addclass').click(function(){
+			$( ".div123" ).addClass( "myownclass" );
+		});
+
+		$('#fadein').click(function(){
+	/*		$('div').fadeIn();*/
+				
+			$('div').fadeOut(3000);
+			//$('div').fadeIn(3000);
+		});
+
+		$('#multiplecss').hover(function(){
+			$(this).css({'color':'red', 'font-size':'30px', 'border':'1px solid blue'});
+		})
+
+
+		$('.divclass').dblclick(function(){
+			$(this).hide();	
+		});
+
+		$('.mouseleave').mouseenter(function(){
+			$('.mouseenter').show();	
+		});
+
+		$('.mouseleave').mouseleave(function(){
+			$('.mouseenter').hide();	
+		});
+
+		$('.showdiv').click(function(){
+			$('p').show();
+
+		});
+
+		$('.btnshow').click(function(){
+			$('.divclass').show();
+		});
+
+	});
+	</script>
+</body>
+</html>
