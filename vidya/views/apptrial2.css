@@ -1,0 +1,42 @@
+.p-class{
+	text-align: right;
+	padding-right: -26px;
+	margin-top:-58px;
+	color:white;
+	font-size: 15px;
+}
+.h1-class{
+	font-size: 48px;
+	color:white;
+	text-shadow:3px 3px black;
+	margin-top: 362px;
+	margin-left: -34px;
+	margin-bottom: 10px;
+}
+h4{
+	color:black;
+	font-size:30px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: -31px;
+}	
+
+.container{
+	background: #0099CC;
+	width:932px;
+}
+.head-class{
+	width:100%;
+	padding:71px;
+	background-image: url("http://prophetesssuzetteakelly.com/blog/wp-content/uploads/2014/08/time-to-live.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 1px;
+    padding:82px;
+}
+.list-div{
+	background-color: 
+}
+.container-fluid{
+	margin-top: -68px;
+}
