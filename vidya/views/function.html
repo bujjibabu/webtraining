@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	 <head>
+	 	<title>
+	 		using innerhtml
+	 	</title>
+	 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	 </head>
+	 <body>
+	 	<h1>
+	 		Functions are block code.
+	 	</h1>
+
+	 	<p id="funid">this is function </p>
+	 	<div id="fundiv">This is a div</div>
+
+
+	 	<p><button type="button" onclick="myFunction()">Try it</button></p>
+
+	 	<script>
+	 	function myFunction(){
+	 		 document.getElementById("funid").innerHTML = "Hello Vidya.";
+	 		 document.getElementById("fundiv").innerHTML = "How are you?"
+	 	}
+	 	  </script>
+	 </body>
+	 </html>
