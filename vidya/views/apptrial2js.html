@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			QUITE HEALTHY TECHNOLOGIES!!
+		</title>
+         <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">  
+         <link rel="stylesheet" type="text/css" href="../views/apptrial2.css">
+         
+         </head>
+
+         <body>
+         	    <div class="container">
+         	    <div class="clearboth">
+         	    <h1 style="text-align: center">Welcome to the Log-in Page</style></h1>
+
+         		<form class="form-horizondal">
+         		
+         		<div class="form-group">
+         		  <label for="firstname" class="col-sm-2">First Name</label>
+         		  <div class="col-sm-10">
+         		  <input type="text" class="form-control control-label" id="firstname" placeholder="Enter firstname">
+         		</div>
+
+        
+         		<div class="form-group">
+         		  <label for="lastname" class="col-sm-2 control-label">Last Name</label>
+         		  <div class="col-sm-10">
+         		  <input type="text" class="form-control" id="lastname" placeholder="Enter Lastname">
+         		 </div>
+
+                  <div class="form-group">
+         		  <label for="E-mail" class="col-sm-2 control-label">E-mail</label>
+         		  <div class="col-sm-10">
+         		  <input type="E-mail" class="form-control" id="E-mail" placeholder="Enter Email">
+         		</div>
+
+         		<div class="form-group">
+         		  <label for="password" class="col-sm-2 control-label">password</label>
+         		  <div class="col-sm-10">
+         		  <input type="Password" class="form-control" id="Password" placeholder="Enter Password">
+         		</div>
+                
+               <input type="button" class="btn btn-primary" id="button"  value="Log in" onclick="fnLogIn" />
+               </div>
+              </form>
+
+              <script type="text/javascript">
+                function fnLogIn(){
+                	var firstname = document.getElementById('firstname').value;
+                	var lastname = document.getElementById('lastname').value;
+                	var Email = document.getElementById('Email').value;
+                	var password = document.getElementById('password').value;
+                	var logIn = document.getElementById('button').value;
+                	alert('firstname');
+                	alert('lastname');
+                	alert('E-mail');
+                	alert('password');
+                    alert('logIn clicked');
+                };
+
+              </script> 
+        </div>
+   </body>
+   </html>
