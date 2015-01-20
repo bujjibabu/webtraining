@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> javscript example2</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<style type="text/css">
+	div{
+		background:red;
+
+	}
+	</style>
+</head>
+<body>
+	<p class="para1">para1</p>
+	<p class="para2">para2</p>
+	<p class="para3">para3</p>
+	<ul>
+		<li>listitem1</li>
+		<li>listitem2</li>
+		<li>listitem3</li>
+	</ul>
+	<ul>
+		<li>listitem4</li>
+		<li>listitem5</li>
+		<li>listitem6</li>
+	</ul>
+	<input type="button" value="btn1">
+	<input type="button" value="btn2">
+	<input type="button" value="btn3">
+	<p class="btn btn-primary btnclick">click here</p>
+	<table class="table">
+	<tr>
+		<td>td1</td>
+		<td>td2</td>
+		<td>td3</td>
+		<td>td4</td>
+	</tr>
+	<tr>
+		<td>td1</td>
+		<td>td2</td>
+		<td>td3</td>
+		<td>td4</td>
+	</tr>
+	<tr>
+		<td>td1</td>
+		<td>td2</td>
+		<td>td3</td>
+		<td>td4</td>
+	</tr><tr>
+		<td>td1</td>
+		<td>td2</td>
+		<td>td3</td>
+		<td>td4</td>
+	</tr>
+	</table>
+
+	<div>slidedown</div>
+	<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		
+			$('.btnclick').click(function(){
+				//$('p:first').css('color','red');
+				//$('ul li:first').css('color','red');//select the first li of first ul
+				//$('ul li:first-child').css('color','red');//select the first li of every ul
+				//$(':button').css('color','red');//select the first li of every ul
+				//$('tr:even').css('background','red');//select the first li of every ul
+				//$('tr:odd').css('background','green');//select the first li of every ul
+				//$('table').hide(speed, callback)//select the first li of every ul
+				//$('table').hide('fast', function(){alert('hiodetable')})//select the first li of every ul
+				//$('table').hide(2000);//select the first li of every ul
+				//$('table').toggle(speed,callback);//select the first li of every ul
+				//$('table').toggle(2000);//select the first li of every ul
+				//$('table').slideUp();//select the first li of every ul
+				//$('div').animate({'left':'250px','height':'100px','width':'100px','opacity':'0.8'},1000);
+				//$('div').animate({parms},speed,callback);
+				//$('table').css('color','red').slideToggle(4000);
+				$('.para1').hide();
+			});
+	});
+		
+	</script>
+</body>
+</html>
+
+
