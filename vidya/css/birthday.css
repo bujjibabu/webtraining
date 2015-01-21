@@ -1,23 +1,49 @@
 .bday-body{
 	color:green;
 	margin:none;
-	width: 50%;
+	width: 48%;
 	height: 30%;
-    padding: 20px;
+    
     border-spacing: 10%;
 	border:solid purple;
 	text-align: left;
 	background-color:white; 
 	border:10%; 
-	bo
+	
      }
 .b-bday{
 	 width: 100%;
-	 height: 100%;
+	 height: 852px;
 	 padding:1px;
 	 background-color: purple;
-	 background-image: url('https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/994934_541228039286162_671747707_n.jpg?oh=5e542bd178bf3026e0efeedd42a8704e&oe=5525D0A3&__gda__=1429343258_e68bfc5c354bab4dec4d6c42fadb7ab5');
+	 background-image: url('https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/1549502_603058759769756_509266539_n.jpg?oh=2a5fccecf3f5433ca2a922c13af5b47b&oe=5528E6FF&__gda__=1433263918_d0fbb4dcb017c81ad9f194ef7cb076f4');
+	 
 	 }
+
   .v-bday{
   	text-shadow:2px 2px blue;
+  	text-align: center;
   }
+  .rhyme{
+  	font-size: 30px;
+  	color: blue;
+	font-style: italic;
+	text-align: right;
+	text-shadow: white 2px 2px;
+   }
+   .head{
+   	 font-size: 30px;
+   	 color:blue;
+   	 font-style: italic;
+   	 text-shadow:white 2px 2px;
+   }
+   h2{
+   	font-size: 25px;
+	color: blue;
+	text-shadow: white 2px 2px;
+   }
+   img{
+   	display: right;
+   	min-width: 2px;
+   	min-height: 2px;
+   }
