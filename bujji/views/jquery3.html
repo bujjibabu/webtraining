@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> javscript example2</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<style type="text/css">
+	.activecls{
+		background: red;
+	}
+	</style>
+</head>
+<body>
+	<form>
+		<p>some text</p>
+		<div>
+		<p class="htmlcls">html</p>
+		<a class="attributecls">attribute</a>
+		</div>
+		<input type="text" value="Bujji" class="fname"/>
+		<input type="text" value="babu" class="lname" />
+		<input type="email" value="bujji404@gmail.com" class="emailcls" />
+		<input type="button" value="submit" id="submitid"/>
+	</form>
+	<ul class="removeclass">
+		<li class="li1">listitem1</li>
+		<li class="li">listitem2</li>
+		<li class="li">listitem3</li>
+		<li class="li">listitem4</li>
+		<li class="li">listitem5</li>
+		<li class="li3">listitem6</li>
+	</ul>
+<p class="appendtext">append text</p>
+
+<p class="removecls">remove text</p>
+<table class="table">
+	<tr>
+		<th>head1</th>
+		<th>head2</th>
+		<th>head3</th>
+		<th>head4</th>
+	</tr>
+	<tr>
+		<td>td1</td>
+		<td>td2</td>
+		<td>td3</td>
+		<td>td4</td>
+	</tr>
+	<tr>
+		<td>td1</td>
+		<td>td2</td>
+		<td>td3</td>
+		<td>td4</td>
+	</tr><tr>
+		<td>td1</td>
+		<td>td2</td>
+		<td>td3</td>
+		<td>td4</td>
+	</tr>
+	</table>
+	<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#submitid').click(function(){
+			//get CONTENT
+
+			//var x = $('.fname').val();
+			//var x = $('p').text();
+			//var x = $('p').text('changed text');
+			//var x = $('p').html();
+			//var x = $('.htmlcls').html('<i>bold text </i>');
+			//var x = $('div').html();
+			//var y = $('div').text();
+
+			//console.log('html()',x);
+			//console.log('text()',y);
+			//alert(x);
+
+// set attributes
+
+//$('.attributecls').attr('href','http://www.google.com');
+//$('.attributecls').attr('id','attributeid');
+
+//$('.attributecls').attr({'href':'http://www.google.com','id':'attributeid','title':'attributetitle'})
+//$('.appendtext').append(' some extra text').prepend('sample prepend');
+//$('.appendtext').prepend(' <b> some extra text befor add </b>');
+//$('.appendtext').prepend('<div><form>username:<input type="text"/>password:<input type="password"/><button> login </button></form></div>');
+
+//$('ul li').remove('.li');
+//$('.li').remove();
+//$('.removeclass').empty();
+
+
+		});
+
+		//$('tr th').click(function(){
+			//$('tr th').removeClass('activecls');
+			//$(this).addClass('activecls');
+			//$(this).toggleClass('activecls');
+
+		//});
+$(selector).load(url,data,callback);
+$('.login').get('http:google.com',function(result){
+	if(success){
+		redirect to dashboard pag
+		var currentresult =result;
+	}else{
+		//alert('oops try agin');
+		$('p').html('<p> username or password wrong</P>');
+	}
+};
+});
+
+
+	});
+	</script>
+</body>
+</html>
+
+
