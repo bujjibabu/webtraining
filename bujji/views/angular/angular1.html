@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+</head>
+<body  ng-controller="firstcontroller">
+<div class="text-center">
+	Name: <input type="text" ng-model="name" class="name"  />
+</div>
+<div class="text-center">
+	{{name}}
+</div>
+<div class="text-center" ng-bind="name"></div>
+<div ng-click="fnclick();">clickhere</div>
+
+<div ng-hide="hidevar"> showing after click </div>
+
+
+<script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../js/angular.min.js"></script>
+<script type="text/javascript">
+	function firstcontroller($scope){
+		$scope.name = 'data binding from controller';
+		$scope.hidevar = true;
+		$scope.fnclick = function(){
+			alert($scope.name);
+			$scope.hidevar = false;
+		};
+
+
+/*//javascript
+		function functionname(){
+
+		}
+//js 		
+
+	var functionname = function(){
+
+	};*/
+
+		//ng-init="name='binding value'"
+	};
+</script>
+</body>
+</html>

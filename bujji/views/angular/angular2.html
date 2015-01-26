@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+</head>
+<body  ng-controller="secondcontroller">
+	<div class="text-center col-sm-4">
+		<table class="table table-bordered">
+			<!-- <tr>
+              <td data-ng-bind="myjsonobject.firsname"></td>
+              <td data-ng-bind="myjsonobject.lastname"></td>
+              <td data-ng-bind="myjsonobject.age"></td>
+              <td data-ng-bind="myjsonobject.gendar"></td>
+			</tr>
+
+			<tr>
+              <td data-ng-bind="myarray[0]"></td>
+              <td data-ng-bind="myarray[1]"></td>
+              <td data-ng-bind="myarray[2]"></td>
+              <td data-ng-bind="myarray[3]"></td>
+			</tr> -->
+			<tr>
+				<th class="text-center">Name</th>
+				<th class="text-center">LastName</th>
+				<th class="text-center">Age</th>
+				<th class="text-center">Gendar</th>
+			</tr>
+			<tr data-ng-repeat="myobject in myarray | orderBy:'firsname'">
+				<td data-ng-bind="myobject.firsname +' '+ myobject.middlename"></td>
+				<td data-ng-bind="myobject.lastname"></td>
+				<td data-ng-bind="myobject.age"></td>
+				<td data-ng-bind="myobject.gendar"></td>
+			</tr>
+		</table>
+	</div>
+<script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script type="text/javascript">
+	function secondcontroller($scope){
+		$scope.myarray=
+			[
+			{'firsname':'bujji','middlename':'babu','lastname':'balaga','age':25,'gendar':'male'},
+			{'firsname':'vidya','middlename':'sri','lastname':'s','age':26,'gendar':'female'},
+			{'firsname':'viswa','middlename':'nath','lastname':'s','age':23,'gendar':'male'},
+			{'firsname':'murali','middlename':'mohan','lastname':'balaga','age':27,'gendar':'male'}
+			];
+		
+	};
+</script>
+</body>
+</html>

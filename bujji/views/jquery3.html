@@ -6,6 +6,7 @@
 	<style type="text/css">
 	.activecls{
 		background: red;
+		width:100%;
 	}
 	</style>
 </head>
@@ -92,13 +93,11 @@
 
 		});
 
-		//$('tr th').click(function(){
-			//$('tr th').removeClass('activecls');
-			//$(this).addClass('activecls');
-			//$(this).toggleClass('activecls');
-
-		//});
-$(selector).load(url,data,callback);
+		$('tr th').click(function(){debugger;
+			$('tr th').removeClass('activecls glyphicon glyphicon-chevron-up');
+			$(this).addClass('activecls glyphicon glyphicon-chevron-up');
+		});
+/*$(selector).load(url,data,callback);
 $('.login').get('http:google.com',function(result){
 	if(success){
 		redirect to dashboard pag
@@ -109,7 +108,7 @@ $('.login').get('http:google.com',function(result){
 	}
 };
 });
-
+*/
 
 	});
 	</script>
