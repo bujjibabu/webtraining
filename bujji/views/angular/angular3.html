@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+</head>
+<body  ng-controller="secondcontroller">
+	<div class="text-center col-sm-4" data-ng-init="showmytable=true;">
+		<p>Search : <input type="text" data-ng-model="searchText"></p>
+		<p>Search on Name: <input type="text" data-ng-model="searchText.firsname"></p>
+		<p>Search on age: <input type="text" data-ng-model="searchText.age"></p>
+		<p>Search on lastname: <input type="text" data-ng-model="searchText.lastname"></p>
+		<table class="table table-bordered" data-ng-show="showmytable">
+			<tr>
+				<th class="text-center">Name</th>
+				<th class="text-center">LastName</th>
+				<th class="text-center">Age</th>
+				<th class="text-center">Gendar</th>
+				<th class="text-center">currency</th>
+			</tr>
+			<tr data-ng-repeat="myobject in myarray | filter:searchText">
+				<td data-ng-bind="myobject.firsname +' '+ myobject.middlename"></td>
+				<td data-ng-bind="myobject.lastname | uppercase"></td>
+				<td data-ng-bind="myobject.age"></td>
+				<td data-ng-bind="myobject.gendar | lowercase"></td>
+				<td data-ng-bind="myobject.currency | currency"></td>
+			</tr>
+		</table>
+
+		<button ng-disabled="checkvalu" data-ng-class ="checkvalu && 'btn-primary' || 'btn-danger'">click here </button>
+		<!-- <button ng-disabled="checkvalu">click here </button> -->
+
+		<input type="checkbox" ng-model="checkvalu">
+		<div class="btn btn-success" data-ng-click="showmytable=!showmytable">hide table</div>
+	</div>
+<script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script type="text/javascript">
+	function secondcontroller($scope){
+		$scope.myarray=
+			[
+			{'firsname':'bujji','middlename':'babu','lastname':'a','age':25,'gendar':'Male','currency':50},
+			{'firsname':'vidya','middlename':'sri','lastname':'d','age':26,'gendar':'female','currency':20},
+			{'firsname':'viswa','middlename':'nath','lastname':'b','age':23,'gendar':'MALE','currency':10},
+			{'firsname':'murali','middlename':'mohan','lastname':'r','age':27,'gendar':'MAle','currency':70}
+			];
+		
+	};
+</script>
+</body>
+</html>
+
+
+

@@ -19,13 +19,13 @@
               <td data-ng-bind="myarray[2]"></td>
               <td data-ng-bind="myarray[3]"></td>
 			</tr> -->
-			<tr>
-				<th class="text-center">Name</th>
-				<th class="text-center">LastName</th>
-				<th class="text-center">Age</th>
-				<th class="text-center">Gendar</th>
+			<tr data-ng-init="reverse=false;pridect='age';">
+				<th class="text-center" data-ng-click="pridect='firsname'; reverse=!reverse;">Name</th>
+				<th class="text-center" data-ng-click="pridect='lastname'; reverse=!reverse;">LastName</th>
+				<th class="text-center" data-ng-click="pridect='age';reverse=!reverse;">Age</th>
+				<th class="text-center"  data-ng-click="pridect='gendar';reverse=!reverse;">Gendar</th>
 			</tr>
-			<tr data-ng-repeat="myobject in myarray | orderBy:'firsname'">
+			<tr data-ng-repeat="myobject in myarray | orderBy:pridect : reverse">
 				<td data-ng-bind="myobject.firsname +' '+ myobject.middlename"></td>
 				<td data-ng-bind="myobject.lastname"></td>
 				<td data-ng-bind="myobject.age"></td>
@@ -39,10 +39,10 @@
 	function secondcontroller($scope){
 		$scope.myarray=
 			[
-			{'firsname':'bujji','middlename':'babu','lastname':'balaga','age':25,'gendar':'male'},
-			{'firsname':'vidya','middlename':'sri','lastname':'s','age':26,'gendar':'female'},
-			{'firsname':'viswa','middlename':'nath','lastname':'s','age':23,'gendar':'male'},
-			{'firsname':'murali','middlename':'mohan','lastname':'balaga','age':27,'gendar':'male'}
+			{'firsname':'bujji','middlename':'babu','lastname':'a','age':25,'gendar':'male'},
+			{'firsname':'vidya','middlename':'sri','lastname':'d','age':26,'gendar':'female'},
+			{'firsname':'viswa','middlename':'nath','lastname':'b','age':23,'gendar':'male'},
+			{'firsname':'murali','middlename':'mohan','lastname':'r','age':27,'gendar':'male'}
 			];
 		
 	};
