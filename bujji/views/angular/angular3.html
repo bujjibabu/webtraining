@@ -17,7 +17,7 @@
 				<th class="text-center">Gendar</th>
 				<th class="text-center">currency</th>
 			</tr>
-			<tr data-ng-repeat="myobject in myarray | filter:searchText">
+			<tr data-ng-repeat="myobject in myarray | filter:searchText" >
 				<td data-ng-bind="myobject.firsname +' '+ myobject.middlename"></td>
 				<td data-ng-bind="myobject.lastname | uppercase"></td>
 				<td data-ng-bind="myobject.age"></td>
@@ -25,13 +25,27 @@
 				<td data-ng-bind="myobject.currency | currency"></td>
 			</tr>
 		</table>
-
+		<input type="date">
+		<p>date {{mydateinms | date:'MMMM/dd/yyyy'}}</p>
+		<!-- <p ng-bind="mydateinmsv | date:'medium'">date {{mydateinmsv | date:'medium'}} -- {{127 | date:'medium'}}</p>
+ -->
 		<button ng-disabled="checkvalu" data-ng-class ="checkvalu && 'btn-primary' || 'btn-danger'">click here </button>
 		<!-- <button ng-disabled="checkvalu">click here </button> -->
 
 		<input type="checkbox" ng-model="checkvalu">
 		<div class="btn btn-success" data-ng-click="showmytable=!showmytable">hide table</div>
+
+		<div>
+  Enter number: <input ng-model='val'><br>
+  Default formatting: <span id='number-default'>{{val | number}}</span><br>
+  <span id='number-default'>{{val | number:0}}</span>
+ <!--  Default formatting: <span id='number-default'>{{val | number}}</span><br>
+  No fractions: <span>{{val | number:0}}</span><br>
+  Negative number: <span>{{-val | number:4}}</span> -->
+</div>
 	</div>
+
+
 <script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
 <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
 <script type="text/javascript">
@@ -43,8 +57,38 @@
 			{'firsname':'viswa','middlename':'nath','lastname':'b','age':23,'gendar':'MALE','currency':10},
 			{'firsname':'murali','middlename':'mohan','lastname':'r','age':27,'gendar':'MAle','currency':70}
 			];
+
+			if(angular.isArray($scope.myarray)){
+				var newmyobject = {'firsname':'kalyan','middlename':'s','lastname':'r','age':24,'gendar':'male','currency':50};
+				delete newmyobject.firsname;
+				console.log(newmyobject.firsname);
+				$scope.myarray.push(newmyobject);
+			}else{
+				alert('not an array');
+			}
+
+			/*for (var i = 0; i < $scope.myarray.length; i++) {
+				
+			};*/
+			$scope.val = 234.56739345;
+			/*$scope.val2 = 4;
+			$scope.total = $scope.val + $scope.val2;
+			alert(angular.isNumber($scope.val));
+			if(angular.isNumber($scope.val)){
+				var totalnum = $scope.val * 5;
+				alert(totalnum);
+
+			}else{
+				alert('not a number check it');
+			}*/
+			//alert($scope.total); // 234.567893454
+			var mydate = new Date();
+			$scope.mydateinms = mydate.getTime();
+			//debugger;
 		
 	};
+
+
 </script>
 </body>
 </html>
