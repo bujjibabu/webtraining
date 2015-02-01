@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+</head>
+<body  ng-controller="secondcontroller">
+	<div class="text-center col-sm-4">
+		<table class="table table-bordered">
+			<!-- <tr>
+              <td data-ng-bind="myjsonobject.firsname"></td>
+              <td data-ng-bind="myjsonobject.lastname"></td>
+              <td data-ng-bind="myjsonobject.age"></td>
+              <td data-ng-bind="myjsonobject.gendar"></td>
+			</tr>
+
+			<tr>
+              <td data-ng-bind="myarray[0]"></td>
+              <td data-ng-bind="myarray[1]"></td>
+              <td data-ng-bind="myarray[2]"></td>
+              <td data-ng-bind="myarray[3]"></td>
+			</tr> -->
+			<tr data-ng-init="reverse=false;pridect='age';">
+				<th class="text-center" data-ng-click="pridect='firsname'; reverse=!reverse;">Name</th>
+				<th class="text-center" data-ng-click="pridect='lastname'; reverse=!reverse;">LastName</th>
+				<th class="text-center" data-ng-click="pridect='age';reverse=!reverse;">Age</th>
+				<th class="text-center"  data-ng-click="pridect='gendar';reverse=!reverse;">Gendar</th>
+			</tr>
+			<tr data-ng-repeat="myobject in myarray | orderBy:pridect : reverse">
+				<td data-ng-bind="myobject.firsname +' '+ myobject.middlename"></td>
+				<td data-ng-bind="myobject.lastname"></td>
+				<td data-ng-bind="myobject.age"></td>
+				<td data-ng-bind="myobject.gendar"></td>
+			</tr>
+		</table>
+	</div>
+<script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script type="text/javascript">
+	function secondcontroller($scope){
+		$scope.myarray=
+			[
+			{'firsname':'bujji','middlename':'babu','lastname':'a','age':25,'gendar':'male'},
+			{'firsname':'vidya','middlename':'sri','lastname':'d','age':26,'gendar':'female'},
+			{'firsname':'viswa','middlename':'nath','lastname':'b','age':23,'gendar':'male'},
+			{'firsname':'murali','middlename':'mohan','lastname':'r','age':27,'gendar':'male'}
+			];
+		
+	};
+</script>
+</body>
+</html>

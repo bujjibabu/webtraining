@@ -1,0 +1,15 @@
+<div class="main">
+	<div data-ng-bind="heading"></div>
+	<table class="table">
+        <tr>
+        	<th>name</th>
+        	<th>age</th>
+        	<th>dob</th>
+        </tr>
+        <tr data-ng-repeat="obj in griddata">
+        	<td data-ng-bind="obj.name"></td>
+        	<td data-ng-bind="obj.age">age</td>
+        	<td data-ng-bind="obj.dob">dob</td>
+        </tr>
+	</table>
+</div>
