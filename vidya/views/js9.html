@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			jspractise9
+		</title>
+
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	</head>
+	<body>
+	    <h3>Create a JS variable.</h3>
+		<p id="vi"></p>
+
+        <h3>Create a javascript object.</h3>
+        <p id="vid"></p>
+
+        <p>
+		There are two different ways to access an object property: 
+		</p>
+		<p>You can use person.property or person["property"].</p>
+		<p id="vidh"></p>
+
+		<h3>Crearing and using an object method</h3>
+		<p>An object method is a function definition, stored as a property value.</p>
+		<p id="vidhy"></p>
+
+
+		<script>
+           var car="volvo";
+           document.getElementById("vi").innerHTML =car;
+
+           var family={mother:"vidya",father:"ashok",daughter:"varshu"};
+           document.getElementById("vid").innerHTML=family.father;
+
+           var person = {
+           	firstname: "vidya",
+           	lastname: "srini",
+           	id : 3322
+         
+          // document.getElementById("vidh").innerHTML = person.firstname + " " + person.lastname;
+          //document.getElementById("vidh").innerHTML = person["firstname"] + " "  + person["lastname"];
+
+          fullname: function() {
+          	return this.firstname + " " + this.lastname;
+          }
+      };
+
+      document.getElementById("demo").innerHTML = person.fullName();
+
+		</script>
+	</body>
+	</html>

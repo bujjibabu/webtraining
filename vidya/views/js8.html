@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			jspractise6
+		</title>
+
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	</head>
+	<body>
+		<h3>Js variables as algebra</h3>
+		<p id="vid"></p>
+
+		<h2>Js string concatenation</h2>
+		<p id="dem"></p>
+
+
+		<h2>Js declare strings in datatypes.</h2>
+		<p id="string"></p>
+
+		<h3>Declare numbers</h3>
+		<p id="vidy"></p>
+
+		<h3>Declare array</h3>
+		<p id="viy"></p>
+
+		<h3>Declare object.</h3>
+		<p id="via"></p>
+
+		<h3>The type of operator returns the type of a variable or an expression.</h3>
+		<p id="vis"></p>
+
+
+
+
+		<script>
+          var price1 = 5;
+          var price2 = 6;
+          var total = price1 + price2;
+          document.getElementById("vid").innerHTML = "The total is: " + total;
+
+          var txt1 ="what a ";
+          var txt2 ="sunny day";
+          var txt3= txt1 + txt2;
+           document.getElementById("dem").innerHTML = txt3;
+
+           var father = "ashok";
+           var mother ="vidya";
+           var daughter ="varsha";
+
+           document.getElementById("string").innerHTML = father + "<br>" +
+	           mother + "<br>" +
+	           daughter ;
+
+	           var x =34.00;
+	           var y =35.00;
+	           var z =123e5;
+	           document.getElementById("vidy").innerHTML = x + " <br> " + y +" <br> " + z;
+
+	           var cars = ["honda","odi","bmw"];
+	           document.getElementById("viy").innerHTML = cars[0];
+
+	           var person = {
+	           	   firstname:"vidya",
+	           	   lastname:"srinivasula",
+	           	   age: 32,
+	           	   eyecolor: "brown"
+	           	};
+
+	           	document.getElementById("via").innerHTML = person.firstname + " is " + person.age + " years old.";
+
+	           	document.getElementById("vis").innerHTML = typeof "vid" + "<br>" + typeof 3.4 + "<br>" ;
+		</script>
+
+	</body>
+	</html>
